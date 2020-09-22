@@ -8,3 +8,15 @@
   font-size: 25px;
   top: 0px;
 }
+.header__logo-container {
+  display: flex;
+}
+.header__logo-1{
+  height: 20px;
+  width: 200px;
+  background-image: cover;
+}
+.header__logo-2{
+  height: 50px;
+  width: 50px;
+}
