@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.app {
+  min-height: 150vh;
+  position: relative;
+  background: gray;
+}
+h1{
+  font-size: 45px;
+}
+h2{
+  font-size: 35px;
+}
+@mixin section(){
+  width: 100vw;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@import './Buttons/buttons';
+@import './Landing/Intro/intro';
+@import './Header/header';
+@import './Landing/Services/services';
+@import './Landing//Testimonials/testimonials';
