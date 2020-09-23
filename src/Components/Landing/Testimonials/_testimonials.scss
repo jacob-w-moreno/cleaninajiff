@@ -1,5 +1,13 @@
 .testimonials{
   @include section;
-  height: 300px;
+  background: $lightblue;
+  // height: 300px;
   color: white;
+  h2 { color: white;}
+}
+.sliderimg{
+  // width: 50%;
+  height: 400px;
+  object-fit: cover;
+  z-index: 0;
 }

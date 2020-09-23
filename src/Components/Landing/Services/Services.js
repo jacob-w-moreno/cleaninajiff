@@ -10,7 +10,8 @@ const Services = (props) => {
         <li>Hard interior surfaces wiped down</li>
         <li>Door jambs wiped and cleaned</li>
         <li>Carpet, seats, and compartments vacuumed</li>
-        <li>Minor carpet stain removal</li>
+        <li>Upholstery and carpet extraction</li>
+        <li>Leather cleaning and conditioning</li>
         <li>Plastic and vinyl interior components UV protected</li>
         <li>Glass cleaned inside and out to a streak-free finish</li>
       </ul>
@@ -23,36 +24,12 @@ const Services = (props) => {
     </div>
     <div className='services__section'>
       <h2>PRICING</h2>
-      <h3>Compact / Sedan Interior Detail:</h3><span>$130</span>
-      <h3>SUV-Sized Interior Detail: $160</h3><span>$130</span>
-      <h3>Truck / Larger Vehicles: $180 +</h3><span>$130</span>
+      <div className='pricing'><h3>Compact / Sedan Interior Detail:</h3><span>$130</span></div>
+      <div className='pricing'><h3>SUV-Sized Interior Detail:</h3><span>$160</span></div>
+      <div className='pricing'><h3>Truck / Larger Vehicles:</h3><span>$180 +</span></div>
+      <div className='pricing__exterior'>Add exterior detailing for only $30!</div>
+      <span className='pricing__dirty'>* Excessively dirty vehicles will cost an additional $50</span>
     </div>
-    {/* <h2>SERVICES & PRICING</h2>
-    <section className='services__grid'>
-      <div className="services__card">
-        <h3>Interior Detailing</h3>
-        <ul>
-          <li>All hard interior surfaces wiped down</li>
-          <li>Door jambs wiped and cleaned</li>
-          <li>Carpet, seats, and compartments vacuumed</li>
-          <li>Minor carpet stain removal</li>
-          <li>All plastic and vinyl interior components UV protected</li>
-          <li>Glass cleaned inside and out to a streak-free finish</li>
-        </ul>
-      </div>
-      <div className="services__card">
-        <h3>Pricing</h3>
-        <ul>
-          <li>All hard interior surfaces wiped down</li>
-          <li>Door jambs wiped and cleaned</li>
-          <li>Carpet, seats, and compartments vacuumed</li>
-          <li>Minor carpet stain removal</li>
-          <li>All plastic and vinyl interior components UV protected</li>
-          <li>Glass cleaned inside and out to a streak-free finish</li>
-        </ul>
-      </div>
-    </section>
-    <CTA cta='CALL TO ACTION'/> */}
   </div>)
 }
 export default Services

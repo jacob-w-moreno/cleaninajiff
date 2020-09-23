@@ -2,68 +2,44 @@
   background: white;
   @include section;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   grid-gap: 25px;
   justify-content: center;
   align-items: start;
 }
 .services__section{
-  background: $darkblue; color: white;
+  box-shadow: 0px 0px 10px 0px rgb(221, 221, 221);
   padding: 25px 40px;
   display: flex; flex-direction: column;
   border-radius: 10px;
-  h2 { color: white; margin-bottom: 10px; align-self: center;}
-  h3 { color: $lighttan; margin-bottom: 10px;}
+  // width: 480px;
+  h2 { margin-bottom: 20px; align-self: center; border-bottom: 3px solid $darkblue;}
+  h3 { color: $darktan; margin-bottom: 10px;}
   ul {
     margin-left: 30px;
     margin-bottom: 15px;
     line-height: 25px;
   }
 }
-.services__included{
-  background: $darkblue;
-  color: white;
+.pricing{
   width: 100%;
-  padding: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.services__grid{
-  justify-content: center;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  grid-gap: 25px;
-  margin-bottom: 25px;
-}
-.services__card{
-  background: $darkblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  padding: 20px 40px;
-  border-radius: 10px;
-}
-.service {
-  height: 340px;
-  width: 400px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  background: white;
-  box-shadow: 0px 0px 10px 0px rgb(221, 221, 221);
-  h3{
-    font-size: 25px;
+  justify-content: space-between;
+  span {
+    color: green;
+    padding-left: 15px;
+    font-weight: bold;
   }
 }
-.service__img{
-  height: 253px;
-  width: 100%;
-  margin-bottom: 20px;
-  background: gray;
+.pricing__exterior{
+  background: green; color: white;
+  font-weight: bold;
+  padding: 10px 0; margin-top: 20px;
   border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+.pricing__dirty{
+  color: red;
+  margin-top: 30px;
 }
