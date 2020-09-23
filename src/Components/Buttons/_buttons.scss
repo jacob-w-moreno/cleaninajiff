@@ -1,10 +1,9 @@
-.button__cta{
-  background: red;
-  width: 350px;
-  height: 40px;
-  background: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: bold;
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+a:hover{
+  color: $lightblue;
+  border-bottom: 2px solid $lightblue;
+  cursor: pointer;
 }

@@ -7,13 +7,13 @@ const Services = (props) => {
     <h2>SERVICES</h2>
     <div className='services__grid'>
       <Service
-        name='Service'
-        price='$100'/>
+        name='Small Vehicle Interior Detail'
+        price='$130'/>
       <Service
-        name='Service 2'
-        price='$100'/>
+        name='Medium Vehicle Interior Detail'
+        price='$160'/>
       <Service
-        name='Service 3'
+        name='Large Vehicle Interior Detail'
         price='$100'/>
     </div>
     <CTA cta='CALL TO ACTION'/>

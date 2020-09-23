@@ -1,16 +1,22 @@
 import React from 'react';
 
-import JiffyLogo from '../Images/JiffyLogo.png';
-import JiffyLogo2 from '../Images/JiffyLogo2.png';
+import LogoWords from '../Images/LogoWords.png';
+import LogoPanda from '../Images/LogoPanda.png';
+import Logo from '../Images/Logo.png';
 
 const Header = (props) => {
   return (<div className='header'>
-    <div className='header__logo-container'>
-      <img className='header__logo-2' src={JiffyLogo2} alt='logo'/>
-      <img className='header__logo-1' src={JiffyLogo} alt='logo'/>
+    <div className='header__container'>
+      <img className='header__logo-1' src={LogoWords} alt='logo'/>
+      <img className='header__logo-2' src={LogoPanda} alt='logo'/>
+      {/* <img className='header__logo' src={Logo} alt='logo'/> */}
     </div>
-    {/* <header>This is the header</header> */}
-    <p>(555) 555-5555</p>
+    <nav className='header__nav'>
+      <a>Services</a>
+      <a>Testimonials</a>
+      <a>About Us</a>
+      <button className='header__cta'>Schedule</button>
+    </nav>
   </div>)
 }
 export default Header;

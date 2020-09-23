@@ -3,20 +3,39 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  position: fixed;
+  position: sticky;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   top: 0px;
+  background: black;
 }
-.header__logo-container {
+.header__container {
   display: flex;
+  align-items: center;
+}
+.header__logo {
+  height: 70px;
 }
 .header__logo-1{
-  height: 20px;
-  width: 200px;
+  height: 26px;
   background-image: cover;
 }
 .header__logo-2{
+  margin-left: 20px;
   height: 50px;
   width: 50px;
+}
+.header__nav{
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__cta{
+  background: $lighttan;
+  // color: black;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
 }
