@@ -24,6 +24,9 @@ h2{
   margin-top: 25px;
   color: $darkblue;
 }
+@media(max-width: 600px) {
+  h2{font-size: 1.6rem;}
+}
 @mixin section(){
   width: 100vw;
   padding: 25px;
@@ -32,10 +35,10 @@ h2{
   align-items: center;
 }
 
-@import './Buttons/buttons';
 @import './Landing/Intro/intro';
 @import './Header/header';
 @import './Landing/Services/services';
 @import './Landing/Testimonials/testimonials';
 @import './Landing/Contact/contact';
 @import './Landing/Pricing/pricing';
+@import './Landing/Schedule/schedule';
