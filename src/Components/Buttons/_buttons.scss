@@ -7,3 +7,22 @@ a:hover{
   border-bottom: 2px solid $lightblue;
   cursor: pointer;
 }
+.button__cta{
+  background: $lighttan;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+}
+.pricing__cta{
+  color: white;
+  background: $darkblue;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  width: 350px;
+  margin: 32px 0;
+}

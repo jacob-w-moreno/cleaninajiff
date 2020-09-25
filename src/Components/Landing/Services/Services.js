@@ -1,5 +1,4 @@
 import React from 'react';
-import CTA from '../../Buttons/CTA';
 
 const Services = (props) => {
   return (<div className='services'>
