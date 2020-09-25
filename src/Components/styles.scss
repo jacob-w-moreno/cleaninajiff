@@ -1,5 +1,6 @@
 $darkblue: #4c6092;
 $lightblue: #95a3ca;
+
 $lighttan: #efca86;
 $mediumtan: #d9ac51;
 $darktan: #c58a2a;
@@ -12,14 +13,13 @@ $darktan: #c58a2a;
 .app {
   min-height: 150vh;
   position: relative;
-  background: gray;
 }
 h1{
   font-size: 45px;
 }
 h2{
   font-size: 35px;
-  color: $darkblue;
+  margin-top: 25px;
 }
 @mixin section(){
   width: 100vw;
@@ -35,3 +35,4 @@ h2{
 @import './Landing/Services/services';
 @import './Landing/Testimonials/testimonials';
 @import './Landing/Contact/contact';
+@import './Landing/Pricing/pricing';
