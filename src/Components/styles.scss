@@ -2,6 +2,7 @@
 
 $darkblue: #4c6092;
 $lightblue: #95a3ca;
+$transblue: #95a3ca46;
 
 $lighttan: #efca86;
 $mediumtan: #d9ac51;
@@ -39,6 +40,6 @@ h2{
 @import './Header/header';
 @import './Landing/Services/services';
 @import './Landing/Testimonials/testimonials';
-@import './Landing/Contact/contact';
+@import './Landing/About/about';
 @import './Landing/Pricing/pricing';
 @import './Landing/Schedule/schedule';

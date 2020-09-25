@@ -85,7 +85,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px;
+  padding: 5px 20px;
   position: -webkit-sticky;
   position: sticky;
   color: white;
@@ -239,8 +239,8 @@ h2 {
 }
 
 .services__service {
-  -webkit-box-shadow: 0px 2px 8px black;
-          box-shadow: 0px 2px 8px black;
+  -webkit-box-shadow: 0px 4px 8px #aaa;
+          box-shadow: 0px 4px 8px #aaa;
   border-radius: 16px;
   background: #95a3ca;
   padding: 30px;
@@ -320,19 +320,43 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial {
+  width: 100%;
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px auto;
+  margin-bottom: 0;
+  padding: 32px;
   background: #95a3ca;
   color: white;
+  border-radius: 10px;
 }
 
-.testimonials h2 {
-  color: white;
+.testimonial h3 {
+  font-size: 1.6rem;
+  max-width: 500px;
+  text-align: center;
 }
 
-.sliderimg {
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 0;
+.testimonial span {
+  font-weight: bold;
+  margin-top: 10px;
+  color: black;
 }
 
 .contact {
@@ -348,7 +372,41 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #4c6092;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact__container {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.about__img {
+  height: 400px;
+  border-radius: 50%;
+}
+
+.contact__icon {
+  height: 80px;
+  width: 80px;
   background: white;
+  border-radius: 50%;
 }
 
 .pricing {
@@ -458,7 +516,7 @@ ul li {
 }
 
 .schedule {
-  background: #00000070;
+  background: #00000099;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -469,16 +527,6 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.schedule__exit {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: none;
 }
 
 .schedule__inner {
@@ -519,5 +567,74 @@ ul li {
   font-weight: bold;
   color: #4c6092;
   font-size: 1.3rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.schedule__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.schedule__button {
+  border: none;
+  width: 48%;
+  height: 30px;
+  background: #4c6092;
+  border-radius: 10px;
+  color: white;
+  font: inherit;
+}
+
+.schedule__button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 350px) {
+  .schedule__button {
+    width: 120px;
+    height: 25px;
+  }
+}
+
+.schedule__cancel {
+  background: none;
+  border: 2px solid #4c6092;
+  color: #4c6092;
+}
+
+@media (max-width: 747px) {
+  .schedule__inner {
+    width: 100%;
+    margin: 0 20px;
+    padding: 16px;
+    padding-top: 32px;
+  }
+  .schedule__inner h3 {
+    font-size: 1.4rem;
+  }
+  .schedule__inner span {
+    font-size: 1rem;
+  }
+  .schedule__inner input {
+    height: 25px;
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
