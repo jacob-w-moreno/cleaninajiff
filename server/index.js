@@ -19,6 +19,7 @@ app.post('/api/email', async(req, res) => {
   });
   var mailOptions = {
     from: 'Me',
+    // to: 'cleaninajiff@gmail.com',
     to: 'jacob.w.moreno@gmail.com',
     subject: 'Scheduling Appointment',
     text: `Congrats! You have a new customer. Name: ${name}. Vehicle: ${vehicle}. City: ${city}. Email: ${email}. Additional Information: ${info}.`
