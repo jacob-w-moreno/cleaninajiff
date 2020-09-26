@@ -11,12 +11,12 @@ const Testimonials = (props) => {
     <h2>TESTIMONIALS</h2>
     <AliceCarousel autoPlay autoPlayInterval='5000'>
       <div className='testimonial'>
-        <h3>"Clean in a Jiff cleaned my car so well! This is a beaming review!"</h3>
-        <span>— a satisfied customer</span>
+        <h3>Thorough and detailed. They cleaned our 12-passenger van and got rid of stains we tried several times to remove ourselves. They were very friendly and let our little kids have a shot with the cleaning tools.</h3>
+        <span>— Louise</span>
       </div>
       <div className='testimonial'>
-        <h3>"This is the best review in the entire world! Is it made up? Who cares!"</h3>
-        <span>— a satisfied customer</span>
+        <h3>Just had @cleaninajiff detail my car today and it looks immaculate!! I'd highly recommend them.</h3>
+        <span>— Christin</span>
       </div>
       <div className='testimonial'>
         <h3>"My car has never been cleaner! This is the cleanest car in the world! Wow!"</h3>

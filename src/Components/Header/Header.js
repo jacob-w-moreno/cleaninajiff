@@ -14,12 +14,13 @@ const Header = (props) => {
         <a className='header__link-small'>Services</a>
         <a className='header__link-small'>Testimonials</a>
         <a className='header__link-small'>About Us</a>
+        <button className='header__link-button' onClick={()=>{props.scheduleFN(true);showNav(false);}}>Schedule</button>
       </nav>
     : null;
   return (<div className='header'>
     <div className='header__container'>
-      <img className='header__logo-1' src={LogoWords} alt='logo'/>
-      <img className='header__logo-2' src={LogoPanda} alt='logo'/>
+      {/* <img className='header__logo-1' src={LogoWords} alt='logo'/>
+      <img className='header__logo-2' src={LogoPanda} alt='logo'/> */}
       {/* <img className='header__logo' src={Logo} alt='logo'/> */}
     </div>
     <nav className='header__nav'>

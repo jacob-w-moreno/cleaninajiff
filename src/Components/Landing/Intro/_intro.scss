@@ -1,19 +1,23 @@
 .intro {
   width: 100%;
   height: 500px;
-  background: $darkblue;
+  background: black;
   color: white;
   text-align: center;
-  padding: 40px; padding-top: 200px;
+  padding: 40px;
   h1 {
     margin-bottom: 20px;
   }
   h2 {
     color: $lightblue;
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-size: 30px;
+    margin-top: 50px;
   }
+}
+.intro__logo{
+  height: 200px;
 }
 .intro__cta{
   padding: 20px;
@@ -24,11 +28,16 @@
     color: white;
     cursor: pointer;
   }
+  background: white;
+  font-weight: bold;
 }
 @media (max-width: 720px) {
+  .intro__logo{
+    height: 100px;
+  }
   .intro {
     height: 500px;
-    padding-top: 150px;
+    padding-top: 100px;
     h1{
       font-size: 34px;
     }

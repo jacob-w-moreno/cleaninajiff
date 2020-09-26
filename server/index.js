@@ -7,7 +7,9 @@ const express = require('express'),
 
 app.use(express.json());
 
-app.post('/email', async(req, res) => {
+app.post('/api/email', async(req, res) => {
+  const {name, vehicle, city, email, info} = req.body;
+
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -16,18 +18,19 @@ app.post('/email', async(req, res) => {
     }
   });
   var mailOptions = {
-    from: 'Better Inc.',
+    from: 'Me',
     to: 'jacob.w.moreno@gmail.com',
     subject: 'Scheduling Appointment',
-    text: `Hey! If you're reading this, it's because Nodemailer works! Get wrecked!`
+    text: `Congrats! You have a new customer. Name: ${name}. Vehicle: ${vehicle}. City: ${city}. Email: ${email}. Additional Information: ${info}.`
   }
-  transporter.sendMail(mailOptions, function(error, info){
+  await transporter.sendMail(mailOptions, function(error, info){
     if (error) {
-      console.log(error);
+      console.log('ERROR: ' + error);
     } else {
       console.log('Email sent: ' + info.response);
     }
   });
+  console.log('complete');
 
   res.status(200).send("WIN: axios.post('/names')");
 })
