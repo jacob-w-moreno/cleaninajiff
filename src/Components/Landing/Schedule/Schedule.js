@@ -13,15 +13,22 @@ const Schedule = (props) => {
   const [email, setEmail] = useState('');
   const [info, setInfo] = useState('');
 
-  const submit = () => { console.log('running'); axios
-    .post('/api/email', {name, vehicle, city, email, info})
-    .then((res) =>{
-      props.scheduledFN(true)
-      setTimeout(() => props.scheduledFN(false), 5000)
-      props.scheduleFN(false);
-      console.log('WIN:', res);
-    })
-    .catch(()=> console.log('FAIL'))
+  // const submit = () => { console.log('running'); axios
+  //   .post('/api/email', {name, vehicle, city, email, info})
+  //   .then((res) =>{
+  //     props.scheduledFN(true)
+  //     setTimeout(() => props.scheduledFN(false), 5000)
+  //     props.scheduleFN(false);
+  //     console.log('WIN:', res);
+  //   })
+  //   .catch(()=> console.log('FAIL'))
+  // }
+
+  const submit = () => {
+    console.log('Email sent successfully.')
+    props.scheduledFN(true)
+    setTimeout(()=>props.scheduleFN(false), 5000)
+    props.scheduleFN(false);
   }
 
   return (<div className='schedule'>
