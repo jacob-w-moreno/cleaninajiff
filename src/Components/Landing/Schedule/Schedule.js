@@ -28,7 +28,6 @@ const Schedule = (props) => {
     console.log('Email sent successfully.')
     props.scheduledFN(true)
     setTimeout(()=>props.scheduleFN(false), 5000)
-    props.scheduleFN(false);
   }
 
   return (<div className='schedule'>
