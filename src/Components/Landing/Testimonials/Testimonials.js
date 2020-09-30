@@ -18,10 +18,6 @@ const Testimonials = (props) => {
         <h3>Just had @cleaninajiff detail my car today and it looks immaculate!! I'd highly recommend them.</h3>
         <span>— Christin</span>
       </div>
-      <div className='testimonial'>
-        <h3>"My car has never been cleaner! This is the cleanest car in the world! Wow!"</h3>
-        <span>— a satisfied customer</span>
-      </div>
     </AliceCarousel>
   </div>)
 }

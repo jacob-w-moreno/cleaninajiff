@@ -1,7 +1,8 @@
 .header {
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  display: none;
+  justify-content: flex-end;
   align-items: center;
   padding: 5px 20px;
   position: sticky;
@@ -11,6 +12,9 @@
   background: $darkblue;
   z-index: 2;
   box-shadow: 3px 0px 10px #000000;
+  a {
+    display: none;
+  }
 }
 .header__container {
   display: flex;
@@ -31,7 +35,7 @@
 .header__nav{
   width: 450px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   a{
     &:hover{
@@ -83,27 +87,27 @@ border-bottom: 2px solid white;
   height: 40px;
 }
 
-@media (max-width: 1030px) {
-  .header__nav{
-    display: none;
-  }
-  .header__hamburger{
-    display: initial;
-  }
-  .header__nav-small{
-    display: flex;
-  }
-};
+// @media (max-width: 1030px) {
+//   .header__nav{
+//     display: none;
+//   }
+//   .header__hamburger{
+//     display: initial;
+//   }
+//   .header__nav-small{
+//     display: flex;
+//   }
+// };
 
-@media (max-width: 640px) {
-  .header__logo-1,
-  .header__logo-2{
-    height: 25px;
-  }
-  .header__hamburger{
-    height: 25px;
-  }
-  .header__nav-small{
-    top: 35px;
-  }
-}
+// @media (max-width: 640px) {
+//   .header__logo-1,
+//   .header__logo-2{
+//     height: 25px;
+//   }
+//   .header__hamburger{
+//     height: 25px;
+//   }
+//   .header__nav-small{
+//     top: 35px;
+//   }
+// }

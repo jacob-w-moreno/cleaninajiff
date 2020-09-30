@@ -32,6 +32,19 @@
   }
   span{font-weight: bold; color: $darkblue; font-size: 1.1rem;}
 }
+.schedule__box{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 16px;
+  &:hover{cursor: pointer;}
+}
+.schedule__icon-2{
+  height: 60px;
+  margin-right: 24px;
+  background-size: cover;
+}
 .schedule__icon-containers{
   display: flex;
   justify-content: space-between;
@@ -87,6 +100,7 @@
   background: none;
   border: 2px solid $darkblue;
   color: $darkblue;
+  margin: 0 auto;
 }
 @media(max-width: 747px) {
   .schedule__inner{
@@ -107,5 +121,15 @@
   }
   .schedule__icon{
     height: 50px;
+  }
+}
+
+
+@media(max-width: 486px) {
+  .schedule__box {
+    font-size: 1.2rem;
+  }
+  .schedule__icon-2{
+    height: 40px;
   }
 }

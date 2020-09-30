@@ -6,6 +6,7 @@ import Testimonials from './Testimonials/Testimonials';
 import Contact from './About/About';
 import Pricing from './Pricing/Pricing';
 import Schedule from './Schedule/Schedule';
+import Schedule2 from './Schedule/Schedule2';
 import Scheduled from './Schedule/Scheduled';
 
 const Landing = (props) => {
@@ -13,7 +14,7 @@ const Landing = (props) => {
   const [scheduled, setScheduled] = useState(false);
 
   const schedulePopup = schedule
-    ? <Schedule scheduleFN={setSchedule} scheduledFN={setScheduled}/>
+    ? <Schedule2 scheduleFN={setSchedule} scheduledFN={setScheduled}/>
     : null;
 
   const scheduledPopup = scheduled
@@ -26,7 +27,7 @@ const Landing = (props) => {
     <Header scheduleFN={setSchedule}/>
     <Intro scheduleFN={setSchedule}/>
     <Services/>
-    <Pricing/>
+    <Pricing scheduleFN={setSchedule}/>
     <Testimonials/>
     <Contact/>
   </div>)

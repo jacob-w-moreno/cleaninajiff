@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 import Car from '../../Images/IconCar.png';
 import SUV from '../../Images/IconSUV.png';
@@ -26,8 +26,9 @@ const Schedule = (props) => {
 
   const submit = () => {
     console.log('Email sent successfully.')
-    props.scheduledFN(true)
-    setTimeout(()=>props.scheduleFN(false), 5000)
+    props.scheduleFN(false);
+    props.scheduledFN(true);
+    setTimeout(()=>props.scheduledFN(false), 5000);
   }
 
   return (<div className='schedule'>

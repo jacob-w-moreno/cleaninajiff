@@ -23,7 +23,7 @@ const Contact = (props) => {
         <span>
           — Jiffy & Shay
         </span>
-        <a className='instagram' target='_blank' href='http://www.instagram.com/' rel='noopener nonreferrer'>
+        <a className='instagram' target='_blank' href='https://www.instagram.com/cleaninajiff/' rel='noopener noreferrer'>
           <img className='instagram__icon' src={Instagram} alt='instagram-icon'/>
             Follow us on Instagram!
           {/* <img className='instagram__icon' src={Instagram} alt='instagram-icon'/> */}

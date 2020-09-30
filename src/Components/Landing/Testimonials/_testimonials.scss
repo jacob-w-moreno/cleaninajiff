@@ -22,3 +22,12 @@
     color: black;
   }
 }
+.alice-carousel__dots{display:none;}
+
+@media(max-width: 750px){
+  .testimonial{
+    h3{
+      font-size: 1rem;
+    }
+  }
+}
