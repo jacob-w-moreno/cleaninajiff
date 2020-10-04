@@ -6,6 +6,9 @@ const Services = (props) => {
   const image = <img className='check' src={Check}/>;
   return (<div className='services'>
     <h2>SERVICES</h2>
+    <section>
+      <p className='services__location'>Based in Utah County, we detail at our location and travel to close enough locations. Contact us for more details!</p>
+    </section>
     <div className='services__list'>
       <div className='services__service'>
         <h3>INTERIOR DETAILING</h3>
